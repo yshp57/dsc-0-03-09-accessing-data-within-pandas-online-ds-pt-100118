@@ -1,20 +1,17 @@
 
-## Booleans and Conditionals with Pandas <a id="toc"></a>
+# Accessing Data within Pandas
 
-### Table of Contents
+## Introduction
 
-1. [Introduction](#intro)
-2. [Pandas Review](#pandas)
-3. [Subsetting Dataframes](#subset)
-4. [Practice Questions](#practice)
+In this lessomn we're going to dig into various methods for accessing data from our Pandas Series and DaatFrames.
 
-### Introduction <a id="intro"></a>
-In this lab you'll get further practice and review with using conditionals, functions and the pandas package. All of these are common skills in a data science workflow.
-
-### Pandas Review <a id="pandas"></a>
-Remember that pandas is a great python package for spreadsheets. This often comes up in many business settings as many people may use Microsoft excel or a similar spreadsheet program. However, pandas allows you to progromatticaly manipulate data in many other ways. File sizes can also be much larger (an excel spreadsheet is limited to ~1M rows).
-
-![](./images/pandas_data_structures.png)
+## Objectives
+You will be able to:
+* Understand and explain some key Pandas methods
+* Use simple selectors for series
+* Access DataFrame data by using the label
+* Perform boolean indexing on both Series and DataFrames
+* Set new Series and DataFrame inputs
 
 # Import Package
 
@@ -1388,5 +1385,6 @@ df[df['Home Team Name'].str.contains('M')]
     ValueError: cannot index with vector containing NA / NaN values
 
 
-Whoops! Now you see one of many reasons why we might need to remove (or fill) null values.
-Which leads us to some time for practice! Go on to the lab where you will combine some of our ideas together!
+## Summary
+
+We've introduded a range of techniques for accessing data from Pandas Series and DataFrames. As you see above, though, this is one of many reasons why we might need to remove (or fill) null values. Which leads us to some time for practice! Lets on to the lab where you will get a chance to combine some of these methods!
