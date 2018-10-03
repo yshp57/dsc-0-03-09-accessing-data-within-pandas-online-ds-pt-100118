@@ -1905,7 +1905,6 @@ col_intensity[0:3]
 
 ```python
 col_intensity[col_intensity > 8] # or col_intensity.loc[col_intensity>8]
-
 ```
 
 
@@ -1944,7 +1943,7 @@ Imagine that for some reason, you're not interested in the color intensity value
 
 
 ```python
-df[df["color_intensity"]>10] = 10
+df.loc[df["color_intensity"]>10, "color_intensity"] = 10
 ```
 
 ### Creating new columns
